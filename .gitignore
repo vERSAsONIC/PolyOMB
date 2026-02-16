@@ -1,0 +1,85 @@
+# CodeLib 文件夹 - 存放参考代码和外部资源
+CodeLib/
+
+# macOS 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Obsidian 配置文件夹
+.obsidian/
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.temp
+*~
+
+# IDE 配置
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 环境变量文件（包含敏感信息）
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# 编译输出
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+*.app
+
+# 文档生成
+/site/
+/docs/_build/
+
+# 测试相关
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
