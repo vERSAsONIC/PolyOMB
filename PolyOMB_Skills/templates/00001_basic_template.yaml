@@ -1,0 +1,23 @@
+---
+name: basic-template
+description: "策略模板 - 复制此文件创建新策略"
+metadata:
+  polyomb:
+    emoji: "📋"
+    author: "your_username"
+    source: "custom"
+    version: "1.0.0"
+    created_at: "2024-01-01"
+    requires:
+      data: ["price_history", "volume"]
+      apis: ["gamma"]
+    params:
+      - name: "param1"
+        type: "int"
+        default: 10
+        description: "参数1描述"
+      - name: "param2"
+        type: "float"
+        default: 0.01
+        description: "参数2描述"
+---

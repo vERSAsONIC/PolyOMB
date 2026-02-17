@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-02-18T01:46:12.233877",
+  "version": "1.0.0",
+  "markets": [
+    {
+      "id": "0x218919622a6132646d149021008659d834927b2b81005a92a54b38d781b0a56f",
+      "question": "Will Donald Trump win the 2024 US Presidential Election?"
+    },
+    {
+      "id": "0xabcdef1234567890abcdef1234567890abcdef12",
+      "question": "Will Bitcoin exceed $100,000 in 2024?"
+    },
+    {
+      "id": "0x9999999999999999999999999999999999999999",
+      "question": "Will there be a US government shutdown in 2024?"
+    }
+  ],
+  "data_stats": {
+    "trades_per_market": 1000,
+    "orderbook_snapshots": 100,
+    "blocks": 100
+  }
+}
