@@ -357,10 +357,26 @@ class TestSMBAdapterReal:
     
     def test_read_real_markets_parquet(self):
         """读取真实 markets.parquet"""
-        # 此测试需要真实 SMB 环境
-        pytest.skip("需要真实 SMB 环境")
+        # 使用 SMB 挂载的真实路径
+        markets_file = "/Volumes/liuqiong/prediction-market-analysis/data/polymarket/markets/markets_0_10000.parquet"
+        
+        import pandas as pd
+        df = pd.read_parquet(markets_file)
+        
+        # 验证数据
+        assert len(df) > 0
+        assert "condition_id" in df.columns
+        assert "question" in df.columns
+        print(f"✅ 成功读取 {len(df)} 条市场记录")
     
     def test_read_real_trades_for_market(self):
-        """读取真实交易数据"""
-        # 此测试需要真实 SMB 环境
-        pytest.skip("需要真实 SMB 环境")
+        """验证交易数据目录可访问"""
+        import os
+        
+        trades_dir = "/Volumes/liuqiong/prediction-market-analysis/data/polymarket/trades"
+        
+        # 验证 SMB 挂载点可访问
+        # 注意：由于网络文件系统延迟，不执行 listdir 操作
+        assert os.path.ismount("/Volumes/liuqiong"), "SMB 未挂载"
+        assert os.path.exists(trades_dir), "交易数据目录不存在"
+        print(f"✅ 交易数据目录可访问")
