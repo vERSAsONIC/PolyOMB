@@ -65,6 +65,15 @@
    - 包括所有 `*.md`、`*.description.md`、说明文档等
    - 这些文件通过 `.gitignore` 规则被排除在版本控制之外
 
+### 本地专用文件夹
+
+以下文件夹**仅保留在本地**，不提交到 GitHub：
+
+| 文件夹名 | 用途 | 本地路径 |
+|---------|------|---------|
+| `Github Polymarket Skills/` | 参考技能文档、调研资料 | 项目根目录下 |
+| `KimiSkill/` | 角色系统配置、技能文件 | 项目根目录下 |
+
 ### 技术实现
 
 `.gitignore` 中已配置：
@@ -72,10 +81,15 @@
 # Markdown 文档 - 只保留 README.md 在 GitHub，其他仅在本地
 *.md
 !README.md
+
+# 本地专用文件夹 - 仅在本地保留，不提交到 GitHub
+Github Polymarket Skills/
+KimiSkill/
 ```
 
 ### 后果
 
 - ✅ README.md 会同步到 GitHub，供访客浏览
 - ❌ 所有其他说明文档、设计文档、架构文档仅在本地可用
-- ⚠️ 执行 `git add .` 时不会意外将 md 文件加入暂存区
+- ❌ `Github Polymarket Skills/` 和 `KimiSkill/` 文件夹仅在本地可用
+- ⚠️ 执行 `git add .` 时不会意外将上述文件/文件夹加入暂存区
