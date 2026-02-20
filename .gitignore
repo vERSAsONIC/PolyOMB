@@ -83,3 +83,7 @@ htmlcov/
 *.db
 *.sqlite
 *.sqlite3
+
+# Markdown 文档 - 只保留 README.md 在 GitHub，其他仅在本地
+*.md
+!README.md
