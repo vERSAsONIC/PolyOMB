@@ -87,3 +87,7 @@ htmlcov/
 # Markdown 文档 - 只保留 README.md 在 GitHub，其他仅在本地
 *.md
 !README.md
+
+# 本地专用文件夹 - 仅在本地保留，不提交到 GitHub
+Github Polymarket Skills/
+KimiSkill/
